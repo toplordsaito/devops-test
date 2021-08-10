@@ -1,12 +1,30 @@
+![Oozou](https://cdn.oozou.com/assets/logo-29352bd92fe47c629c5ff5f3885ed9fea425a4cf4db8ccc8ba253ad2fe2d373d.png)
+
+
 ## Introduction
 
-A proposal for devops test
+This is a technical test for the role of **DevOps Engineer**.
 
-## Description
-[`index.js`](/index.js) file runs an infinite loop logging metrics to [`statsd`](https://github.com/statsd/statsd) server.
+## Objectives
 
-## Exercise
+This test helps us to understand
+- how do you approach infrastructure design
+- how do you manage microservices communication
+- how do you consider security implications
 
-1) Containerize the app 
-2) Create a CI pipeline/workflow for the project using Github actions
-3) Use any IAC tools (Cloudformation, Terraform etc.) to prepare the infrastructure
+## Project Setup
+
+Project root has [`index.js`](/index.js) file. It simulates a simple app that runs infinitely & sends metrics to a [`statsd`](https://github.com/statsd/statsd) server.
+
+## Exercices
+
+  1. Add a `Dockerfile` to containerize the app, with support for multiple environments (test, development & production)
+  2. Add a `docker-compose.yml` file to setup Node app, `statsd` & the backend. Applicants can use any backends for `statsd` (eg: `Graphite`).
+  3. Use any IAC tools (Cloudformation, Terraform etc.) to prepare the infrastructure
+  4. (Optional) Deploy on any cloud computing platforms
+
+## Submitting Your Code
+
+Email us your Github repo. We expect meaningful git commits, ideally one commit per exercise with commit messages clearly communicating the intent.
+
+In case you deploy it to any cloud platforms, please send us instructions & relevant IAM user credentials.
