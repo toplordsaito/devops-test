@@ -1,5 +1,5 @@
-# helm oozou test
+# manifest oozou test
 
 ```bash
-helm upgrade --install oozou helm-chart-node/ -n oozou -f value.yml
+kubectl apply -f deployment.yaml -n oozou
 ```
