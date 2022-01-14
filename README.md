@@ -39,6 +39,6 @@ In case you deploy it to any cloud platforms, please send us instructions & rele
 
 
 ## Demo
-![grafana](/image/grafana.png)
-![graphite](/image/graphite.png)
-![pod](/image/pod.png)
+![grafana](/img/grafana.png)
+![graphite](/img/graphite.png)
+![pod](/img/pod.png)
