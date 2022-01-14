@@ -1,0 +1,7 @@
+google_network_name           = "waruwat-google-network"
+google_network_develop_name   = "waruwat-google-network-develop"
+google_network_develop_subnet = "10.1.0.0/16"
+google_project_id   = "chomchop-test"
+google_region       = "asia-southeast1"
+google_zone         = "asia-southeast1-a"
+google_cluster_name = "develop-cluster"
