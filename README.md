@@ -28,3 +28,17 @@ Project root has [`index.js`](/index.js) file. It simulates a simple app that ru
 Email us your Github repo. We expect meaningful git commits, ideally one commit per exercise with commit messages clearly communicating the intent.
 
 In case you deploy it to any cloud platforms, please send us instructions & relevant IAM user credentials.
+
+## Detail
+  - private docker registry with harbor
+  - dockerfile for multiple environment
+  - docker-compose for develop
+  - manifest for deploy application (only deployment because time limit of test)
+  - deploy on gcp with GKE
+  - grafana, graphite domain (i will sent to natty@oozou.com)
+
+
+## Demo
+![grafana](/image/grafana.png)
+![graphite](/image/graphite.png)
+![pod](/image/pod.png)
