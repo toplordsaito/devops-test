@@ -1,0 +1,1 @@
+helm upgrade --install graphite kiwigrid/graphite -n oozou -f value.yml

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: oozou-stat-deployment
+  labels:
+    app: oozou
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: oozou
+  template:
+    metadata:
+      labels:
+        app: oozou
+    spec:
+      imagePullSecrets:
+      - name : harbor-pull-secret
+      containers:
+      - name: oozou-test
+        image: core-harbor.chomchob.waruwat.work/chomchob/oozou
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: HOST
+          value: graphite
+        - name: PORT
+          value: "8125"

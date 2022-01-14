@@ -1,0 +1,24 @@
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: wildcard-chomchob
+spec:
+  secretName: wildcard-chomchob-tls
+  issuerRef:
+    name: letsencrypt-production
+    kind: ClusterIssuer
+  dnsNames:
+    - "*.chomchob.waruwat.work"
+# ---
+# apiVersion: cert-manager.io/v1
+# kind: Certificate
+# metadata:
+#   name: wildcard-chomchob
+#   namespace: kube-system
+# spec:
+#   secretName: wildcard-chomchob-tls
+#   issuerRef:
+#     name: letsencrypt-production
+#   dnsNames:
+#   - "*.chomchob.waruwat.work"
